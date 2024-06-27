@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Webpage using div</title>
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    .header {
+      padding: 5px;
+      background-color: #00628D;
+      text-align: center;
+    }
+
+    .header h2 {
+      color: white;font-size:50px;
+    }
+
+    /*===============[Nav CSS]==========*/
+    .nav {
+      background-color: #00628D;
+      padding: 5px;
+    }
+
+    .nav li {
+      list-style: none;
+      display: inline-block;
+      padding: 8px;
+    }
+
+    .nav a {
+      color: #fff;
+    }
+
+    .nav ul li a:hover {
+      text-decoration: none;
+      color: #7fffd4;
+    }
+
+    .lside {
+      background-color:lightblue;
+      float: left;
+      width: 80%;
+      min-height: 440px;
+      margin: ;
+    }
+
+    .rside {
+      text-align: center;
+      float: right;
+      width: 20%;
+      min-height: 440px;
+      background-color: #c1cdcd;
+    }
+
+    .footer {
+      height: 44px;
+      background-color: #455e64;
+      text-align: center;
+      padding-top: px;
+    }
+
+    .footer p {
+      color: #8fbc8f;
+    }
+
+@media(max-width: 700px)
+     {
+          .rside,.lside
+		  {
+			   display:none
+		   } 
+	}
+	ul{font-size: 20px;}
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="header">
+      <h2>Aryan Rane</h2>
+    </div>
+    <!-- Nav -->
+    <div class="nav">
+      <ul>
+        <li><a href="#">MUMBAI,MAHARASHTRA</a></li>
+        <li><a href="#">aryan.rane 18428@sakec.ac.in</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li style="float: right;"><a href="#">LOGIN</a></li>
+        <li style="float: right;"><a href="#">SIGN-UP</a></li>
+      </ul>
+    </div>
+
+    <!-- main -->
+      <div class="lside">
+        <p style="bottom-border: thick double;"> <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROFILE</p>
+          <ul>
+          <li>abc</li>
+            <li>pqr</li>
+              <li>xyz</li>
+            </ul>
+                <p style="font-size:30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDUCATION</p>
+           <ul>
+           <li> Completed B.Tech from SHAH AND ANCHOR KUTCHHI ENGINEERING COLLEGE</li>
+           <li>abc</li>
+           <li>xyz</li>
+        </ul>
+      </div>
+      <!-- side -->
+  <div class="rside">
+      <p style="font-size:20px;">&nbsp;&nbsp;EXPERIENCE</p>
+        <ul>
+        <li>abc</li>
+        <li>xyz</li>
+          </ul>
+        <p style="font-size:20px;"> HARD SKILLS</p>
+        <ul>
+        <li> C Progamming</li>
+        <li> HTLM and CSS</li>
+        <li> abc </li>
+        <li> xyz </li>
+        </ul>
+  <p style="font-size:20px;">SOFT SKILLS</p>
+        <ul>
+        <li>Confident</li>
+         <li>Ambitious</li>
+        <li> Hardworking</li>
+        <li> abc </li>
+          </ul>
+   </div><br/>
+    <!-- footer -->
+    <div class="footer">
+      <p>�<strong>Copyright javaTpoint.com</strong></p>
+    </div>
+  </div>
+</body>
+
+</html>

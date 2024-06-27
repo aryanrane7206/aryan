@@ -1,0 +1,116 @@
+<html>
+<head><title>First Javascript page</title>
+<style>
+   h1{
+	background-color:#ADFFE1;
+padding:20px;
+font-family:"Times New Roman",Times,serif;
+  }
+#big{
+	display:grid;
+	grid-template-columns: 33% 33% 33%;
+}
+#first{
+	    background-color:#D4D4DC;
+		outline-width: 5px;
+		outline-style: solid;
+		outline-color:#00A990;
+}
+#second{
+	         background-color:#FEFFC1;
+		outline-width: 5px;
+		outline-style: solid;
+		outline-color:#00A990;
+}
+#third{
+	         background-color:#96A1FF;
+		outline-width: 5px;
+		outline-style: solid;
+		outline-color:#00A990;
+}
+*{
+	 margin:5px;
+	 padding:0px;
+}
+body{
+	background-color:#FFD4A3;
+}
+</style>
+</head>
+<body>
+<h1 style="text-align: center;">First Javascript Page</h1>
+<div id= "big">
+<div id =first >
+ <p id="para"></p>
+ <P ID="bro"></P>
+    <button type="button" onclick='document.getElementById("para").innerHTML= "How are You?"'>CLICK HERE!! </button>
+    <button type="button" onclick="my()">Fav Food..</button>
+<br>
+</div>
+<div id =second >
+<form id="calc">
+ <label for="num1">enter first number:</label><br>
+    <input type="number" id="num1" name="fnum"><br>
+ <label for="num2">enter second number:</label><br>
+    <input type="number" id="num2" name="snum"><br>
+ <label for="opp">1.add 2.sub 3.mul 4.div </label><br>
+    <input type="number" id="opp" name="opp"><br><br>
+     <button type="button" onclick="myfunction()"> ANSWER </button>
+  </form>
+  <p id="add"></p>
+  <br>
+  </div>  
+<div id =third>
+  <form id="fox">
+ <label for="num3">enter number:</label><br>
+   <input type="number" id="num3" name="num3"><br><br>
+     <button type="button" onclick="tab()"> get table </button>
+  </form><br>
+ <p id="tabl"></p>
+</div>
+</div> 
+<script>
+document.write("<hr>");
+document.write("Hello world wide web!");
+document.write("<hr>");
+document.getElementById("para").innerHTML="Hello user!!!"
+function my(){
+document.getElementById("bro").innerHTML="Pizza,Burger,Samosa"}
+window.alert(5+6)
+console.log(5+6);
+var myvar= 31;
+function myfunction()
+{
+  var x = parseInt(document.getElementById("num1").value);
+  var y = parseInt(document.getElementById("num2").value);
+  var o = parseInt(document.getElementById("opp").value);
+  switch(o){
+         case 1:
+  var z = x + y;
+  break;
+         case 2:
+  var z = x - y;
+  break;         
+         case 3:
+  var z = x * y;
+  break;           
+         case 4:
+  var z = x / y;
+  break;
+  default:
+  z="no such operator found";
+  }
+  document.getElementById("add").innerHTML = z;
+}
+function tab(){
+var a = parseInt(document.getElementById("num3").value);
+var i = 1 
+for ( var i = 1; i <=10; i++) 
+{
+var b = a * i ; 
+document.getElementById("tabl").value=b+"<br>";
+}
+}
+</script>
+</body>
+</html>

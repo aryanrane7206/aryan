@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.box
+		{
+			display:grid;
+			grid-template-columns: 50% 50%;
+		}
+		body{
+			background-color: blanchedalmond;
+		}
+	</style>
+<title>Array Operations</title>
+</head>
+<body>
+	<div>
+		<h1> ARRAY OPERATIONS </h1h1>
+<div class="box">
+<div id="res" style="background-color:#FEFFC1;
+outline-width: 5px;
+outline-style: solid;
+outline-color:#00A990;">
+<label for="array" style="margin-left: 10%;">Enter elements:</label><br>
+<input type="text" id="arr" style="margin-left: 40%;width: 50% ;height: 10% ;"><br>
+<button onclick="length()"style="margin-left: 30%; width : 40%;height:10%;">Calculate Length</button><br>
+<button onclick="sum()" style="margin-left: 30%; width : 40%;height:10%;">Calculate sum</button><br>
+<button onclick="reverse()" style="margin-left: 30%; width : 40%;height:10%;">Reverse array</button><br>
+<button onclick="sort()" style="margin-left: 30%; width : 40%;height:10%;">Sort array(Ascending Order)</button><br>
+<button onclick="max()" style="margin-left: 30%; width : 40%;height:10%;">Maximum element of array</button><br><br>
+</div>
+<div style=" background-color:#96A1FF;
+outline-width: 5px;
+outline-style: solid;
+outline-color:#00A990; text-align: center;">
+<p id="len"></p>
+<p id="sum"></p>
+<p id="rev"></p>
+<p id="sort"></p>
+<p id="max"></p>
+</div>
+</div>
+<script>
+function getarrayfrominput(){
+	let input=document.getElementById("arr").value.trim();
+	if(input=="")return [];
+	let array= input.split(",").map(num => parseInt(num));
+	
+	return array;
+}
+function length(){
+	let ar=getarrayfrominput();
+	let l=ar.length;
+	document.getElementById("len").innerHTML=l;
+	
+}
+function sum(){
+	let ar=getarrayfrominput();
+	let sum=0;
+	for(let i=0;i<ar.length;i++){
+		sum+=ar[i];
+	}
+	document.getElementById("sum").innerHTML=sum;
+}
+function reverse(){
+	let ar=getarrayfrominput();
+	let revarr=[];
+	for(let i=ar.length-1;i>=0;i--){
+		revarr.push(ar[i]);
+	}
+	document.getElementById("rev").innerHTML=revarr; 
+}
+function sort(){
+	let ar=getarrayfrominput();
+	let sortarr=ar.slice().sort((a,b) => a-b);
+	document.getElementById("sort").innerHTML=sortarr;
+}
+function max(){
+	let ar=getarrayfrominput();
+	let max=ar[0];
+	for(let i=1;i<ar.length;i++){
+		if(ar[i]>ar[i-1]){
+			max=ar[i];
+		}
+	}
+	document.getElementById("max").innerHTML=max;
+} 
+</script>
+</body >
+</html>
