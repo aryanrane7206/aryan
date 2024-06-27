@@ -61,12 +61,12 @@ body{
   <br>
   </div>  
 <div id =third>
-  <form id="fox">
- <label for="num3">enter number:</label><br>
-   <input type="number" id="num3" name="num3"><br><br>
-     <button type="button" onclick="tab()"> get table </button>
-  </form><br>
- <p id="tabl"></p>
+	<label for="num">Enter Number:</label>
+	<p><input type="text" id="num3" placeholder="Enter number"/></p>
+
+	<p><input type="button" value="Print Table" onclick='printTable()'/>
+	
+	<p id="tabl"></p>
 </div>
 </div> 
 <script>
@@ -102,14 +102,20 @@ function myfunction()
   }
   document.getElementById("add").innerHTML = z;
 }
-function tab(){
-var a = parseInt(document.getElementById("num3").value);
-var i = 1 
-for ( var i = 1; i <=10; i++) 
-{
-var b = a * i ; 
-document.getElementById("tabl").value=b+"<br>";
+function printTable(){
+
+var num;
+
+num=Number(document.getElementById('num3').value);
+
+for(var i=1; i<=10; i++){
+
+var a= document.getElementById('tabl');
+
+a.innerHTML += (num*i) + "<br/>"
+
 }
+
 }
 </script>
 </body>
