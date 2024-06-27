@@ -3,18 +3,54 @@
   <head><title>program</title></head>
   <body>
     <!--heading1-->
-<style>h1{background-color:lightblue}
+<style>
 table,th,td{background-color:cyan;border-color:blue;border-width:5px;border-radius:20px;}
 p{font-size:20px;}
 h4{font-size:30px}
-a: hover{color:black;}
+.nav {
+     display: grid;
+    grid-template-rows: 50% 50%;
+      background-color: blanchedalmond;
+      padding: 10px;
+    }
+
+    .nav li {
+      list-style: none;
+      display: inline-block;
+      padding: 8px;
+    }
+
+    .nav a {
+      color: blue;
+    }
+
+    .nav ol li a:hover {
+      text-decoration: none;
+      color: black;
+    }
+    .box{
+      margin: auto;
+      display: grid;
+  grid-template-columns : 50% 50%;
+    }
+    .y{
+      margin: auto;
+      display: grid;
+  grid-template-columns : 50% 50%;
+    }
+    body{background-color: cadetblue;}
 </style>
-  <h1> This is HTML Tutorial</h1>
+  <h1 style="background-color: black; color: aliceblue; padding:10% ;font-size: 50px;text-align: center;outline-style: solid;outline-width: 7px; outline-color: burlywood;"> 
+    This is HTML Tutorial</h1>
+  <div class="y">
+  <div style="background-color: bisque;text-align: center;">
   <p>You'll learn about HTML</p>
     <p><strong>you won't learn HTML</strong></p>
     <p>click&nbsp;&nbsp;&nbsp;here</p>
     <h2><strong>START</strong></h2>
     <h3><strong>STOP</strong></h3>
+    </div>
+    <div style="background-color: lemonchiffon;">
     <table border="3" cellspacing="5" cellpadding="10">
       <tr><th colspan="3">INFORMATION</th></tr>
       <tr>
@@ -25,36 +61,42 @@ a: hover{color:black;}
       <tr><td>ARYAN RANE</td>
         <td>10TH</td>
         <td>91.60</td>
+      </tr>
+    </table>
+    </div>
+    </div>
+    <div class="box">
+    <div style="background-color: lightskyblue;outline-width: 15px; outline-style: solid; outline-color: #00A990;">
         <!--unordered list-->
-        <ul>
+        <ul style="margin-left: 25%;">
           <li>TOMATO</li>
           <li>POTATO</li>
           </ul>
           <!--ordered list-->
-          <ol>
+          <ol style="margin-left: 25%;">
           <li>TOMATO</li>
           <li>POTATO</li>
             </ol>
-   <dl>
+   <dl style="margin-left: 25%;">
      <dt><strong>start</strong></dt>
      <dd>begin the code</dd>
      <dt><strong>Input</strong></dt>
      <dd>enter the value from user</dd>
    </dl>
- <a href="https://codepen.io/"><img src = "https://st2.depositphotos.com/1763191/10981/v/950/depositphotos_109819146-stock-illustration-red-yo-yo-with-white.jpg" alt="yoyo"
-  style="width:200px;height:200px" title="YOYO"></a>
-            <p>a<sub>1</sub><sup>2</sup>=b<sub>1</sub><sup>2</sup>
-  <form>
-    <label for="firstname">First name:</label>
+   </div>
+  <div style="background-color : lightgoldenrodyellow;outline-width: 15px; outline-style: solid; outline-color: #00A990;">
+  <p style="margin-left: 25%;">a<sub>1</sub><sup>2</sup>=b<sub>1</sub><sup>2</sup></p>
+  <form style="margin-left: 25%;">
+    <label for="firstname">First name:</label><br>
    <input type="text"name="firstname" required>
     <br>
-    <label for="lastname">Last name:</label>
+    <label for="lastname">Last name:</label><br>
     <input type="text"name="last name" required>
     <br>
-    <label for"email">email:</label>
+    <label for"email">email:</label><br>
     <input type="email"name="email" required>
     <br>
-    <label for="password">password:</label>
+    <label for="password">password:</label><br>
     <input type="password"name="password" required>
     <br>
     <input type="radio" id="MALE"
@@ -67,6 +109,11 @@ a: hover{color:black;}
     <textarea rows="10" cols="20"></textarea>
     <br>
     <input type="submit"value ="login!">
+    </form>
+    </div>
+    </div><br>
+    <a href="https://codepen.io/"><img src = "https://st2.depositphotos.com/1763191/10981/v/950/depositphotos_109819146-stock-illustration-red-yo-yo-with-white.jpg" alt="yoyo"
+      style="width:200px;height:200px" title="YOYO"></a>
     <div style="background-color:pink;color:black;padding:10px;">
       <h4>HTML DIVISION</h4>
       <p> HTML Division is like a container which store information in it</p>
@@ -76,16 +123,22 @@ a: hover{color:black;}
       <p> Placeholder displays faint text that directs instrction for typing</p>
     </div>
     <style>h5{font-size:30px}</style>
-    <video width="500px" height="450px" controls>
+    <div style="background-color: darkkhaki;">
+        <video width="900px" height="450px" controls style="margin-bottom: 10%;margin-left: 4%;">
       <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
     </video>
     <audio controls>
       <source src="https://file-examples.com/storage/fed5266c9966708dcaeaea6/2017/11/file_example_OOG_1MG.ogg" type="audio/ogg">
     </audio>
-     <ul style="font-size:30px;">
-       <li><a href="#">abc</a></li> 
-       <li><a href="#">xyz</a></li>
-       </ul>
-    
+    </div>
+    <h1 style="background-color: lightcoral;"> OTHER PROJECTS</h1h1>
+    <div class="nav">
+     <ol style="font-size:30px;">
+       <li><a href="a.html" rel="stylesheet" type="text/html">Portfolio</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <li><a href="AC.html" rel="stylesheet" type="text/html">Calculator</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <li><a href="aj.html" rel="stylesheet" type="text/html">Javascript</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <li><a href="array2.html" rel="stylesheet" type="text,html">Array Operations</a></li>
+       </ol>
+       </div>
    </head>
           </html>
