@@ -3,6 +3,8 @@
 import random
 from collections import Counter
 
+#List of Words to choose from
+#Note added by Uday Lathia
 someWords = '''apple banana mango strawberry 
 orange grape pineapple apricot lemon coconut watermelon 
 cherry papaya berry peach lychee muskmelon'''
